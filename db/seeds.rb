@@ -74,22 +74,22 @@ puts "--> All instances destroyed"
 
 puts "Creating new instance"
 puts ""
-puts "   Creating Provenance"
-  COUNTRIES.each_with_index do |country, index|
-    provenance = Provenance.new(name: country, prefixe: PREFIXES[index])
-    provenance.save
-  end
-puts "   -->Provenances created"
-puts ""
-puts "      Creating new clients"
-  CLIENTS.each_with_index do |client, index|
-    company = CompanyName.new(name: client, address: ADDRESS_CLIENT[index], provenance: Provenance.all.sample)
-    company.save
-  end
-puts "      Creating 2 traders"
-  louis =
+# puts "   Creating Provenance"
+#   COUNTRIES.each_with_index do |country, index|
+#     provenance = Provenance.new(name: country, prefixe: PREFIXES[index])
+#     provenance.save
+#   end
+# puts "   -->Provenances created"
+# puts ""
+# puts "      Creating new clients"
+#   CLIENTS.each_with_index do |client, index|
+#     company = CompanyName.new(name: client, address: ADDRESS_CLIENT[index], provenance: Provenance.all.sample)
+#     company.save
+#   end
+# puts "      Creating 2 traders"
+#   louis =
 
 
-puts "      -->Companies created"
+# puts "      -->Companies created"
 
 
